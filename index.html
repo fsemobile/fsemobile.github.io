@@ -1,9 +1,27 @@
 <html lang="pt-br">
 <head>
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+        <script>
+          var OneSignal = window.OneSignal || [];
+          OneSignal.push(function() {
+            OneSignal.init({
+              appId: "d16a9b89-c81e-4751-843e-17b7ff1f53b3",
+            });
+          });
+        </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113375693-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-113375693-2');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FS Web - Soluções Web</title>
+    <title>FS - Soluções Web e Mobile</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -31,17 +49,17 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 box-item anima-1 animated fadeInDown">
+            <div class="col-lg-4 box-item anima-1 animated zoomIn">
                 <img src="img/icon-responsive.png" alt="sites responsivos">
                 <div class="label-item">CRIAÇÃO DE SITES</div>
                 <div class="item-desc">Criação de sites profissionais, dinâmicos e responsivos que se adaptam a diversos tamanhos de tela como tablets e smartphones.</div>
             </div>
-            <div class="col-lg-4 box-item anima-2 animated fadeInDown">
+            <div class="col-lg-4 box-item anima-2 animated zoomIn">
                 <img src="img/icon-host.png" alt="hospedagem">
                 <div class="label-item">HOSPEDAGEM</div>
                 <div class="item-desc">Oferecemos hospedagem e suporte de qualidade para que seu site fique disponivel na internet 24h por dia.</div>
             </div>
-            <div class="col-lg-4 box-item anima-3 animated fadeInDown">
+            <div class="col-lg-4 box-item anima-3 animated zoomIn">
                 <img src="img/icon-web.png" alt="sistemas web">
                 <div class="label-item">SISTEMAS WEB</div>
                 <div class="item-desc">Desenvolvemos sistemas web como cadastro de clientes e outras finalidades, automatizando todo o trabalho da empresa.</div>
@@ -49,6 +67,11 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>   
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+    <script>
+        $('.box-item').hover(function(){
+                $(this).toggleClass('bounceIn');
+            }); 
+    </script>  
 </body>
 </html>
