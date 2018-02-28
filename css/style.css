@@ -53,8 +53,8 @@ body{
 .item{
 	margin:0 auto;
 	padding:10px;
-	background:navy;
-	opacity:0.8;
+	background:black;
+	opacity:0.4;
 	width:270px;
 	height:270px;
 	border-radius: 50%;
