@@ -52,7 +52,7 @@ body{
 
 .box-item:hover{
 	color: #fad715;
-	transition: all 0.5 ease;
+	transition: 0.5s all;
 }
 
 .item{
