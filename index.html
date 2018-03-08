@@ -1,91 +1,232 @@
-<html lang="pt-br">
-<head>
-        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-        <script>
-          var OneSignal = window.OneSignal || [];
-          OneSignal.push(function() {
-            OneSignal.init({
-              appId: "d16a9b89-c81e-4751-843e-17b7ff1f53b3",
-            });
-          });
-        </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113375693-2"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-113375693-2');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FS - Soluções Web e Mobile</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="shortcut icon" href="img/favico.ico" type="image/x-icon">
-</head>
-<body>
-    <div class="container-fluid">
-        <div class="row row-up">
-            <div class="col-lg-4">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FS Mobile - Soluções digitais</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="FS Mobile, soluções digitais, criação de sites." />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:type" content="website" />
+        <meta name="author" content="FS Mobile" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/animate.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href="css/hamburgers.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row" style="height:90px;background-image:url('img/back-top.jpg')">
+                <div class="col-lg-8 logo">
+                    <img src="img/logo.png" class="animated rotateIn logo-anime" alt="logo fs">
+                </div>
+                <div class="col-lg-4 side-right-header">
+                        <a href="http://facebook.com.br/flaviosantosweb" target="_blank"><i class="fa fa-facebook-square fa-2x"></i> Curta nossa pagina no facebook</a> <span class="tel-header">(11) 9 9373-8022 <i class="fa fa-whatsapp"></i></span>
                 
-            </div>
-            <div class="col-lg-4">
-                <div class="container-logo animated rotateIn">
-                    <img src="img/logo.png" alt="logo" class="img-responsive">
-                </div>    
-            </div>
-            <div class="col-lg-4 container-contact-right">
-                <ul class="contact-header animated fadeInDown">
-                    <li><span class="label-contact-header">facebook.com/flaviosantosweb</span> <img src="img/face.png" alt="facebook"></li>
-                    <li><span class="label-contact-header">flaviodsanttos@hotmail.com</span> <img src="img/mail.png" alt="email"></li>
-                    <li><span class="label-contact-header">(11) 9 9373 - 8022</span> <img src="img/whats.png" alt="whatsapp"></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 box-item anima-1 animated zoomIn">
-                <div class="item">
-                        <img src="img/icon-responsive.png" alt="sites responsivos">
-                        <div class="label-item">CRIAÇÃO DE SITES</div>
-                        <div class="item-desc">Criação de sites profissionais, responsivos que se adaptam a diversos tamanhos de tela como tablets e smartphones.</div>
+                <button class="hamburger hamburger--spin" type="button" id="bt-hamburger">
+                        <span id="lb-menu" style="font-size:29px;margin-right:8px">MENU</span>
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
                 </div>
             </div>
-            <div class="col-lg-4 box-item anima-2 animated zoomIn">
-                <div class="item">
-                    <img src="img/icon-host.png" alt="hospedagem">
-                    <div class="label-item">HOSPEDAGEM</div>
-                    <div class="item-desc">Oferecemos hospedagem e suporte de qualidade para que seu site fique disponivel na internet 24h por dia.</div>
-                </div>
-            </div>
-            <div class="col-lg-4 box-item anima-3 animated zoomIn">
-                <div class="item">
-                    <img src="img/icon-web.png" alt="sistemas web">
-                    <div class="label-item">SISTEMAS WEB</div>
-                    <div class="item-desc">Desenvolvemos sistemas web como cadastro de clientes e outras finalidades, automatizando todo o trabalho da empresa.</div>
+            <div class="row row-menu">
+                <div class="col-lg-12" style="padding:0">
+                    <ul class="menu-top">
+                        <li><a href="#sites" class="menu-item">CRIAÇÃO DE SITES</a></li>
+                        <li><a href="#host" class="menu-item">HOSPEDAGEM</a></li>
+                        <li><a href="#system" class="menu-item">SISTEMAS WEB</a></li>
+                        <li><a href="#ecommerce" class="menu-item">LOJAS VIRTUAIS</a></li>
+                        <li><a href="#google" class="menu-item">GOOGLE ADWORDS</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-    <script type="text/javascript" src="js/bootstrap.min.js"></script> 
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5a8f601a4b401e45400d2417/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
-</body>
+                    
+<!-- carrousel bootstrap -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+      
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="img/slide1.jpg" alt="slide1" width="100%">
+                  </div>
+      
+                  <div class="item">
+                    <img src="img/slide2.jpg" alt="slide2" width="100%">
+                  </div>
+      
+                  <div class="item">
+                    <img src="img/slide3.jpg" alt="slide3" width="100%">
+                  </div>
+                </div>
+      
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Próximo</span>
+                </a>
+              </div> <!-- fim carrousel bootstrap -->
+              <div class="container-fluid">
+                  <section>
+                    <div class="row section-right" id="sites">
+                        <div class="col-lg-6 img-right animated left">
+                            <img src="img/websites.jpg" alt="criação de sites" class="img-responsive img">
+                        </div>
+                        <div class="col-lg-6 animated right">
+                            <h1>CRIAÇÃO DE SITES</h1>
+                            <div class="content-right">
+                                Criação de sites dinâmicos, responvivos que se adaptam a diversos tamanhos de telas e dispositivos.
+                                Sites com estilos modernos, utilizando o que há de melhor na Web, com formulários
+                                de contato e chat online em tempo real. Desenvolvido conforme os novos padrões e critérios
+                                de desenvolvimento para que o Google indexe da melhor forma possivel.
+                                
+                            </div>
+                        </div>
+                    </div>
+                  </section>
+                  <section>
+                        <div class="row section-left" id="host">
+                            <div class="col-lg-6 animated left">
+                                <h1>HOSPEDAGEM</h1>
+                                <div class="content-left">
+                                    Hospedagem com ótima configuração e suporte técnico para que você nao tenha dores
+                                    de cabeça, nós monitoramos tudo e você irá apenas pensar nos seus negócios.
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 img-left right animated">
+                                <img src="img/host.jpg" alt="hospedagem" class="img-responsive img">
+                            </div>
+                        </div>
+                      </section>
+                      <section>
+                        <div class="row section-right" id="system">
+                            <div class="col-lg-6 img-right left animated">
+                                <img src="img/system.jpg" alt="sistemas web" class="img-responsive img">
+                                
+                            </div>
+                            <div class="col-lg-6 right animated">
+                                <h1>SISTEMAS WEB</h1>
+                                <div class="content-right">
+                                    Desenvolvemos sistemas web (utilizados através de um browser) conforme necessidade,
+                                    utilizando as principais técnicas de desenvolvimento e segurança.
+                                    Sistemas web hoje estão mais em alta por ser possivel ser acessados de qualquer lugar
+                                    através de navegadores web e por essa e outras vantagens faz o desenvolvimento de softwares
+                                    web o que na maioria das vezes se enquadra melhor as necessidades.
+                                    
+                                </div>
+                            </div>
+                        </div>
+                     </section>
+                     <section>
+                        <div class="row section-left" id="ecommerce">
+                            <div class="col-lg-6 left animated">
+                                <h1>LOJAS VIRTUAIS</h1>
+                                <div class="content-left">
+                                    Hoje com a crescente da internet e as redes sociais, muitos optam por vender seus produtos
+                                    online, entram em ação as lojas virtuais também conhecidas como e-commerces. Muito utilizada
+                                    por empreendedores que não desejam abrir um estabelecimento físico, as lojas virtuais estão
+                                    ganhando cada vez mais espaço na web.
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 img-left right animated">
+                                <img src="img/ecommerce.jpg" alt="lojas virtuais" class="img-responsive img">
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                            <div class="row section-right" id="google">
+                                <div class="col-lg-6 animated left img-right">
+                                    <img src="img/google.jpg" alt="google adwords" class="img-responsive img">
+                                </div>
+                                <div class="col-lg-6 right animated">
+                                    <h1>GOOGLE ADWORDS</h1>
+                                    <div class="content-right">
+                                        Solução a curto prazo para anúncios no Google. O Google Adwords tem a solução completa
+                                        para que seu site rankeie posições melhores nas buscas e aumentando ainda mais
+                                        a procura por seus produtos e serviços.
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="row">
+                            <div class="col-lg-12" style="text-align:center;font-size:35px">
+                                <a href="#top" title="subir"><span class="glyphicon glyphicon-menu-up seta"></span></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 credit">FS Mobile - Soluções digitais (11) 9 9373-8022 <i class="fa fa-whatsapp"></i></div>
+                        </div>
+              </div>
+              
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>      
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.com/libraries/fullPage.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > 700) {
+                        $('a[href="#top"]').fadeIn();
+                    } else {
+                        $('a[href="#top"]').fadeOut();
+                    }
+                });
+
+                $('a[href="#top"]').click(function(){
+                    $('html, body').animate({scrollTop : 0},800);
+                    return false;
+                });
+
+                $('.menu-item').click(function(){
+                    $('.left').addClass('slideInLeft');
+                    $('.right').addClass('slideInRight');
+                   resetAnimation();
+                });
+
+                $('button#bt-hamburger').click(function(){
+                    $('.menu-top').slideToggle();
+                    $('#bt-hamburger').toggleClass('is-active');
+                    
+                });
+
+		    });
+
+            function resetAnimation(){
+                setTimeout(function(){
+                    $('.left').removeClass('slideInLeft');
+                    $('.right').removeClass('slideInRight');
+                }, 1000);
+            }
+        </script>
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/5a8f601a4b401e45400d2417/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
+    
+    </body>
 </html>
