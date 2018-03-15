@@ -115,6 +115,10 @@ box-shadow: -1px 17px 76px 0px rgba(122,122,122,1);
 	
 }
 
+.img-project{
+	padding:30px !important;
+}
+
 .content-right{
 	font-size:20px;
 	margin-top:20px;
