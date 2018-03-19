@@ -56,10 +56,9 @@ border-bottom: 4px solid #8adb0b;
 }
 
 .menu-top li:hover{
-	
+	background:#8adb0b;
 	padding:15px;
-		 
-
+	
 }
 
 .logo-anime{
@@ -146,7 +145,7 @@ ul a{
 }
 
 ul a:hover{
-	color:#8adb0b;
+	color:white;
 	text-decoration:none;
 }
 
