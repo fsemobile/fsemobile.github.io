@@ -383,4 +383,9 @@ a[href="#top"]{
 		display:block;
 	}
 	
+	.container-projetos{
+		padding-top:100px;
+		padding-bottom:100px
+	}
+	
 }
