@@ -325,19 +325,19 @@ a[href="#top"]{
 	.row-menu-hamburger{
 		margin-top:30px;
 		position:absolute;
-		left:41%
+		left:43%	
 	}
 	
 	.row-menu-hamburger div{
 		border:2px solid transparent;
 		color:white;
 		font-size:40px;
-		padding:2px;
+		padding:4px;
 		width:70px;
 		height:70px;
 		display:block;
 		background: #8adb0b;
-		border-radius: 50%
+		border-radius: 50%;
 	}
 
 	.logo img{
