@@ -19,6 +19,15 @@
 	padding-left:80px !important;
 }
 
+.img-right img{
+	border: 2px dashed #8adb0b;
+	padding:5px;
+}
+
+.img-left img{
+	border: 2px dashed #8adb0b;
+	padding:5px;
+}
 
 .container-projetos{
 	padding-top:70px;
@@ -407,5 +416,7 @@ a[href="#top"]{
 		padding-top:100px;
 		padding-bottom:100px
 	}
+	
+	
 	
 }
