@@ -3,7 +3,7 @@
     <head>
         <title>FS Mobile - Soluções digitais</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0">
         <meta name="description" content="FS Mobile, soluções digitais, criação de sites." />
         <meta property="og:locale" content="pt_BR" />
         <meta property="og:type" content="website" />
@@ -19,38 +19,8 @@
         <link href="css/hover.css" rel="stylesheet" media="all">
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row" style="height:90px;background-image:url('img/back-top.jpg')">
-                <div class="col-lg-8 logo">
-                    <img src="img/logo.png" class="animated rotateIn logo-anime" alt="logo fs">
-                </div>
-                <div class="col-lg-4 side-right-header">
-                        <a href="http://facebook.com.br/flaviosantosweb" target="_blank"><i class="fa fa-facebook-square"></i> Curta nossa pagina no facebook</a> <span class="tel-header">(11) 9 9373-8022 <i class="fa fa-whatsapp"></i></span>
-                
-                <button class="hamburger hamburger--spin" type="button" id="bt-hamburger">
-                        <span id="lb-menu" style="font-size:29px;margin-right:8px">MENU</span>
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-                </div>
-            </div>
-            <div class="row row-menu">
-                <div class="col-lg-12" style="padding:0">
-                    <ul class="menu-top">
-                            <li><a href="#clientes" class="menu-item">CLIENTES</a></li>
-                        <li><a href="#sites" class="menu-item">CRIAÇÃO DE SITES</a></li>
-                        <li><a href="#host" class="menu-item">HOSPEDAGEM</a></li>
-                        <li><a href="#system" class="menu-item">SISTEMAS WEB</a></li>
-                        <li><a href="#ecommerce" class="menu-item">LOJAS VIRTUAIS</a></li>
-                        <li><a href="#google" class="menu-item">GOOGLE ADWORDS</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-                    
 <!-- carrousel bootstrap -->
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" style="position: absolute;">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                   <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -84,6 +54,30 @@
                 </a>
               </div> <!-- fim carrousel bootstrap -->
               <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-lg-3 logo">
+                        <img src="img/logo.png" class="animated rotateIn logo-anime" width="130" height="130" alt="logo fs">
+                        <div class="row-menu-hamburger">
+                            <div id="iconhambuger">
+                                <i class="fa fa-navicon"></i>
+                            </div>
+                        </div>
+                        </div>
+                      <div class="col-lg-9">
+                        <ul class="menu-top">
+                            <i id="bt-close-menu" class="fa fa-close" style="float:right;border:1px solid;padding:5px;"></i>
+                            <li><a href="#clientes" class="menu-item">CLIENTES</a></li>
+                            <li><a href="#sites" class="menu-item">CRIAÇÃO DE SITES</a></li>
+                            <li><a href="#host" class="menu-item">HOSPEDAGEM</a></li>
+                            <li><a href="#system" class="menu-item">SISTEMAS WEB</a></li>
+                            <li><a href="#ecommerce" class="menu-item">LOJAS VIRTUAIS</a></li>
+                            <li><a href="#google" class="menu-item">GOOGLE ADWORDS</a></li>
+                        </ul>
+        
+                      </div>
+                  </div>
+              </div>
+              <div class="container-fluid" style="margin-top:35%">
                 <section>
                     <div class="row" id="clientes">
                         <div class="col-lg-12 container-projetos">
@@ -106,7 +100,7 @@
                 <section>
                     <div class="row section-right" id="sites">
                         <div class="col-lg-6 img-right animated left">
-                            <img src="img/websites.jpg" alt="criação de sites" class="img-responsive img">
+                            <img src="img/websites.jpg" alt="criação de sites" class="img-responsive img img-circle">
                         </div>
                         <div class="col-lg-6 animated right">
                             <h1>CRIAÇÃO DE SITES</h1>
@@ -131,14 +125,14 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 img-left right animated">
-                                <img src="img/host.jpg" alt="hospedagem" class="img-responsive img">
+                                <img src="img/host.jpg" alt="hospedagem" class="img-responsive img img-circle">
                             </div>
                         </div>
                       </section>
                       <section>
                         <div class="row section-right" id="system">
                             <div class="col-lg-6 img-right left animated">
-                                <img src="img/system.jpg" alt="sistemas web" class="img-responsive img">
+                                <img src="img/system.jpg" alt="sistemas web" class="img-responsive img img-circle">
                                 
                             </div>
                             <div class="col-lg-6 right animated">
@@ -167,14 +161,14 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 img-left right animated">
-                                <img src="img/ecommerce.jpg" alt="lojas virtuais" class="img-responsive img">
+                                <img src="img/ecommerce.jpg" alt="lojas virtuais" class="img-responsive img img-circle">
                             </div>
                         </div>
                     </section>
                     <section>
                             <div class="row section-right" id="google">
                                 <div class="col-lg-6 animated left img-right">
-                                    <img src="img/google.jpg" alt="google adwords" class="img-responsive img">
+                                    <img src="img/google.jpg" alt="google adwords" class="img-responsive img img-circle">
                                 </div>
                                 <div class="col-lg-6 right animated">
                                     <h1>GOOGLE ADWORDS</h1>
@@ -200,10 +194,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>      
         <script src="js/bootstrap.min.js"></script>
         <script src="js/pace.js"></script>
+        <script type="text/javascript" src="js/smoothScroll.js"></script>
         <script type="text/javascript">
             $(function(){
                 $(window).scroll(function(){
-                    if ($(this).scrollTop() > 700) {
+                    if ($(this).scrollTop() > 600) {
                         $('a[href="#top"]').fadeIn();
                     } else {
                         $('a[href="#top"]').fadeOut();
@@ -221,10 +216,12 @@
                    resetAnimation();
                 });
 
-                $('button#bt-hamburger').click(function(){
+                $('#iconhambuger').click(function(){
                     $('.menu-top').slideToggle();
-                    $('#bt-hamburger').toggleClass('is-active');
-                    
+                });
+
+                $('#bt-close-menu').click(function(){
+                    $('.menu-top').hide();
                 });
 
 		    });
