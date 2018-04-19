@@ -25,6 +25,20 @@
 	padding-bottom:100px
 }
 
+.img-project:hover > .legend-project{
+	background: #8adb0b;
+	color:white;
+}
+
+.legend-project{
+	text-align:center;
+	font-weight: bold;
+	margin-top:10px;
+	font-size:17px;
+	border:1px solid #8adb0b;
+	padding:5px;
+}
+
 .menu-top{	
 	margin-top:80px;
 	list-style:none;
@@ -332,7 +346,7 @@ a[href="#top"]{
 		border:2px solid transparent;
 		color:white;
 		font-size:40px;
-		padding:4px;
+		padding:7px;
 		width:70px;
 		height:70px;
 		display:block;
