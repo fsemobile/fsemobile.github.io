@@ -320,12 +320,12 @@ a[href="#top"]{
 		margin:0 auto;
 		padding:0 !important;
 		text-align:center;
-		
 	}
 	.row-menu-hamburger{
 		margin-top:30px;
 		position:absolute;
-		left:41%	
+		width:100%;	
+		
 	}
 	
 	.row-menu-hamburger div{
@@ -338,6 +338,7 @@ a[href="#top"]{
 		display:block;
 		background: #8adb0b;
 		border-radius: 50%;
+		margin:0 auto !important;
 	}
 
 	.logo img{
@@ -345,22 +346,12 @@ a[href="#top"]{
 		height:140px
 	}
 	
-	.row-menu{
-		margin:0;
-		padding:0 !important;
-		position:relative;
-		left: 0;
-	}
-
-	
 	.menu-top{
 		width:100%;
 		padding:0;
 		display: none;
-		margin:0;
-		margin-top:-100px;
+		margin-top:-130px;
 		background-color: rgba(0, 0, 0, 0.7);
-		
 	}
 	
 	.menu-top li{
