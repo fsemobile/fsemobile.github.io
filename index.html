@@ -202,7 +202,13 @@
         <script src="js/pace.js"></script>
         <script type="text/javascript" src="js/smoothScroll.js"></script>
         <script type="text/javascript">
-            $(function(){
+                $(function(){
+
+                    $('body').smoothScroll({
+                    speed: 600,
+                    stepAmount: 400
+                });
+
                 $(window).scroll(function(){
                     if ($(this).scrollTop() > 600) {
                         $('a[href="#top"]').fadeIn();
