@@ -252,8 +252,23 @@
             s1.setAttribute('crossorigin','*');
             s0.parentNode.insertBefore(s1,s0);
             })();
+			
+			$("html").easeScroll({
+				frameRate: 60,
+				animationTime: 1000,
+				stepSize: 120,
+				pulseAlgorithm: 1,
+				pulseScale: 8,
+				pulseNormalize: 1,
+				accelerationDelta: 80,
+				accelerationMax: 1,
+				keyboardSupport: true,
+				arrowScroll: 50,
+				touchpadSupport: true,
+				fixedBackground: true
+			 });
         </script>
         <!--End of Tawk.to Script-->
-    
+		
     </body>
 </html>
