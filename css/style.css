@@ -357,6 +357,7 @@ a[href="#top"]{
 		padding:0 !important;
 		text-align:center;
 	}
+	
 	.row-menu-hamburger{
 		margin-top:30px;
 		position:absolute;
@@ -368,7 +369,7 @@ a[href="#top"]{
 		border:2px solid transparent;
 		color:white;
 		font-size:40px;
-		padding:13px;
+		padding:6px;
 		width:70px;
 		height:70px;
 		display:block;
